@@ -46,14 +46,14 @@ body {
 address {
   font-style: normal;
 }
-.contacts-item {
+.contacts-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-color);
 }
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 
@@ -96,9 +96,9 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--body-color);
 }
-.section-title {
+.products-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -107,11 +107,20 @@ address {
   text-align: center;
   color: var(--first-section-color);
 }
-.fourth-section {
+.team-section {
   background-color: #f4f4fd;
 }
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--first-section-color);
+}
 
-.list-item {
+.team-list-item {
   background-color: #ffffff;
 }
 .our-team-title {
@@ -139,7 +148,7 @@ address {
   color: #f4f4fd;
 }
 
-.portfolio-button-item {
+.portfolio-button {
   font-size: 16px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -150,9 +159,9 @@ address {
   background-color: #f4f4fd;
   color: var(--brand-color);
 }
-.portfolio-button-item:hover,
-.portfolio-button-item:focus,
-.portfolio-button-item:active {
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-button:active {
   background-color: #404bbf;
   color: #ffffff;
 }
