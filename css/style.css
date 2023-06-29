@@ -3,10 +3,6 @@ body {
   color: var(--body-color);
   background-color: #ffffff;
 }
-.main-container {
-  width: 1158px;
-  max-width: 100%;
-}
 
 img {
   display: block;
@@ -26,6 +22,7 @@ img {
   --first-section-color: #2e2f42;
   --body-color: #434455;
   --studio-color-footer: #f4f4fd;
+  --border-color: #E7E9FC; 
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -78,16 +75,11 @@ address {
   color: #404bbf;
 }
 .container-header {
-  width: 1440px;
-height: 72px;
-flex-shrink: 0;
 border-bottom: 1px solid #e7e9fc;
 }
+
 .main-container-header {
   display: flex;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 .nav-list {
   display: flex;
@@ -278,18 +270,13 @@ gap: 40px;
   max-width: 264px;
 }
 
-.container-footer-text {
-  display: flex;
-  width: 264px;
-  flex-direction: column;
-  flex-shrink: 0;
-  margin: 140px 1020px 100px 156px;
-}
 
 /* --------------------------PORTFOLIO------------------------- */
 .portfolio {
   width: 1440px;
+  padding: 96px 0 120px 0;
 }
+
 .portfolio-button {
   font-size: 16px;
   font-family: Roboto, sans-serif;
@@ -300,24 +287,28 @@ gap: 40px;
   text-align: center;
   background-color: #f4f4fd;
   color: var(--brand-color);
-  border-radius: 4px;
-border: 1px solid #E7E9FC;
+border: 1px solid var(--border-color);
+padding: 12px 24px;
+border-radius: 4px;
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
 .portfolio-button:active {
   background-color: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 .portfolio-button-list {
-  display: inline-flex;
-align-items: flex-start;
-gap: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-images-title {
@@ -326,6 +317,7 @@ gap: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--first-section-color);
+  margin-bottom: 8px;
 }
 .portfolio-images-text {
   font-size: 16px;
@@ -333,17 +325,12 @@ gap: 24px;
   letter-spacing: 0.02em;
   color: var(--body-color);
 }
-.studio-footer {
-  color: var(--studio-color-footer);
-}
+
 .portfolio-item {
-  display: flex;
-width: 360px;
-height: 420px;
-padding: 0px 0px 32px 0px;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-flex-shrink: 0;
-border: 1px solid #E7E9FC;
+  width: calc((100% - 48px) / 3);
+}
+.container-underimage-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
