@@ -80,6 +80,7 @@ address {
 
 .main-container-header {
   display: flex;
+  justify-content: space-between;
 }
 .nav-list {
   display: flex;
@@ -148,6 +149,7 @@ address {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .features-item {
@@ -176,6 +178,7 @@ address {
 }
 .products-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .products-item {
@@ -222,6 +225,7 @@ address {
 .team-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .team-list-item {
