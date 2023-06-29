@@ -16,6 +16,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
 }
 :root {
   --brand-color: #4d5ae5;
@@ -153,7 +154,7 @@ address {
   gap: 24px;
 }
 .features-item {
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .features-title {
@@ -230,7 +231,7 @@ address {
 }
 .team-list-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .our-team-title {
